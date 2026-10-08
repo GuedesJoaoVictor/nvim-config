@@ -2,9 +2,10 @@ return {
   { "neovim/nvim-lspconfig" },
   {
     "mason-org/mason.nvim",
+    opts = { ensure_installed = { "jdtls" } },
   },
   {
-    "mason-lsp/mason-lspconfig.nvim",
+    "mason-org/mason-lspconfig.nvim",
     opts = {
       automatic_enable = {
         exclude = {
